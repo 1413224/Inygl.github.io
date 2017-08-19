@@ -1,0 +1,155 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+p{
+	margin-bottom: 0;
+	color: #404040;
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+	 font-size: 1.4rem;
+}
+h1{
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+}
+.sqmyxq{
+	width: 100%;
+}
+.sqmyxq .zd-bar{
+	background: #d72b2b;
+}
+.sqmyxq .zd-bar a,.sqmyxq .zd-bar h1{
+	color: #fff;
+}
+.sqmyxq .tit{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	background: #fff;
+	margin-top: 4.5rem;
+	padding-left: 5%;
+}
+.sqmyxq .tit p{
+	font-size: 1.6rem;
+}
+.sqmyxq .tit p span{
+	margin-left: 2%;
+}
+/*内容开始*/
+.content{
+	width: 100%;
+	min-height: 13.7rem;
+	background: #fff;
+	margin-top: .5rem;
+	padding-top: .7rem;
+}
+.content .neirong{
+	width: 90%;
+	margin: 0 auto;
+	/*border:1px solid #333;*/
+}
+.content .neirong h1{
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+}
+.content .neirong p{
+	text-indent: 2.8rem;
+	font-size: 1.4rem;
+}
+/*内容结束*/
+/*答复开始*/
+.dafu{
+	width: 100%;
+	min-height: 9.5rem;
+	background: #e2c4c4;
+	margin-top: .5rem;
+	padding-top: .7rem;
+}
+.dafu .answer{
+	width: 90%;
+	margin: 0 auto;
+	/*border:1px solid #333;*/
+}
+.dafu .answer h1{
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+}
+.dafu .answer p{
+	text-indent: 2.8rem;
+	font-size: 1.4rem;
+}
+/*答复结束*/
+
+
+/*留言开始*/
+.liuyan{
+	width: 100%;
+	/*border: 1px solid #333;*/
+	margin-top: 1rem;
+	background: #fff;
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+}
+.liuyan h2{
+	font-size: 1.5rem;
+	color: #d72b2b;
+	font-weight: normal;
+	padding-bottom: .5rem;
+	padding-left: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+.liuyan .cont{
+	width: 90%;
+	margin: 0 auto;
+}
+.liuyan .cont .time{
+	float: right;
+	padding-right: .5rem;
+}
+.liuyan .contgl{
+	width: 90%;
+	margin: 1rem auto 0;
+	background: #e2c4c4;
+	border-radius: .3rem;
+}
+.liuyan .contgl .time{
+	float: right;
+	padding-right: .5rem;
+}
+/*留言结束*/
+.sqmyxq .footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+	border-top: 1px solid #d7d2d2;
+}
+.sqmyxq .footer li{
+	float: left;
+	/*width: 33%;*/
+	width: calc(100%/3);
+	text-align: center;
+	padding: .5rem 0;
+	/*border:1px solid #ccc;*/
+}
+.sqmyxq .footer li a{
+	/*display: block;*/
+
+}
+.sqmyxq .footer li a span{
+	font-size: 2.5rem;
+	color: #d72b2b;
+}
+
+.zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}

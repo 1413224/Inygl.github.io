@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>查看办复情况详情</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bfqkxq.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="bfqkxq">
+		<!-- 头部开始 -->
+		<header class="mui-bar mui-bar-nav zd-bar">
+			<a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">办复情况详情</h1>
+		</header>
+		<!-- 头部结束 -->
+		<!-- 内容开始 -->
+		<div class="content">
+			<div class="neirong">
+				<div class="cont">
+					<h1>对区政协九届一次会议第XX号提案的答复</h1>
+					<p class="name">某某某委员</p>
+					<p class="tian">您关于提出的关于<span>XXX</span>的提案</p>
+					<p>收悉，现答复如下：</p>
+				</div>
+				<div class="cont-bot">
+					<p class="danwei">某某某单位</p>
+					<p class="date">2017年6月12日</p>
+				</div>
+				<div class="bottom">
+					<span class="fzname">负责人:</span><span class="jinban">经办人:</span><span class="tel">联系电话:</span>
+				</div>
+			</div>
+		</div>
+		<!-- 内容结束 -->
+		<div class="liuyan">
+			<h2>协商留言</h2>
+			<div class="cont clearfix">
+				<p class="name">XXX委员：XXXXXXXXXXXXXXX</p>
+				<p class="time">2017-6-12 <span>15:53</span></p>
+			</div>
+			<div class="contgl clearfix">
+				<p class="name" style="margin-left: .5rem;">XXX委员：XXXXXXXXXXXXXXX</p>
+				<p class="time">2017-6-12 <span>15:53</span></p>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<ul>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-Aa" id="font"></span></a>
+				</li>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-shoucang5" id="shoucang"></span></a>
+				</li>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-daochu" id="zhezhao" style="font-size: 2.2rem;"></span></a>
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+
+	<div class="zhezhao" style="display: none;"></div>
+
+
+
+	<script type="text/javascript">
+		$(function(){
+
+			$("#shoucang").click(function(){
+				$(this).toggleClass("icon-shoucangfill")
+			});
+
+
+			var html = document.getElementsByTagName('html')[0];
+			$("#font").click(function(){
+
+				if(html.style.fontSize==11+'px'){
+
+					html.style.fontSize=10+'px';
+					$(".bfqkxq .footer li a span").css("font-size","2.5rem");
+
+				}else{
+					html.style.fontSize=11+'px';
+
+					$(".bfqkxq .footer li a span").css("font-size","2.23rem");
+				}	
+				
+			});
+
+			$("#zhezhao").click(function(){
+				$(".zhezhao").show();
+				return false;
+			});
+
+			$('html,body').click(function(){
+				$(".zhezhao").hide();
+			});
+
+		});
+
+	</script>
+</body>
+</html>

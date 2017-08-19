@@ -1,0 +1,125 @@
+
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+
+/*搜索页面开始*/
+#search-wap{
+	width: 100%;
+	box-sizing: border-box;
+}
+#search-wap header{
+	width: 100%;
+	height: 5rem;
+	line-height: 5rem;
+	background: #fff;
+	padding-left: .5rem;
+}
+#search-wap header .zd-jiantou{
+	font-size: 3rem;
+	width: 3rem;
+	height: 3rem;
+	/*border: 1px solid #333;*/
+	position: relative;
+	top: 1rem;
+	color: #d72b2b;
+}
+#search-wap header .sear{
+	width: 68%;
+	position: relative;
+	padding-top: .8rem;
+	
+}
+#search-wap header .sear span{
+	position: absolute;
+	top: -.1rem;
+	left: .7rem;
+	font-size: 1.8rem;
+	color: #ccc;
+}
+#search-wap header .zd-search{
+	width: 100%;
+	height: 3rem;
+	color: #ccc;
+	border-radius: 2rem;
+	font-size: 1.4rem;
+	padding-left: 3rem;
+	/* position: relative;
+	top: .5rem; */
+}
+#search-wap header span.zd-sou{
+	color: #d72b2b;
+	padding-right: 1rem;
+	font-size: 1.6rem;
+	margin-left: .7rem;
+}
+@media screen and (max-width: 320px){
+	#search-wap header span.zd-sou{
+		color: #d72b2b;
+		padding-left: 1rem;
+		font-size: 1.6rem;
+		margin-left: .5rem;
+	}
+	#search-wap header .zd-jiantou{
+		font-size: 3rem;
+		width: 3rem;
+		height: 4rem;
+		/*border: 1px solid #333;*/
+		position: relative;
+		/*top: 1rem;*/
+		color: #d72b2b;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 375px){
+	#search-wap header span.zd-sou{
+		color: #d72b2b;
+		padding-left: 1.5rem;
+		font-size: 1.6rem;
+		margin-left: .5rem;
+	}
+	#search-wap header .zd-jiantou{
+		font-size: 3rem;
+		width: 4rem;
+		height: 4rem;
+		/*border: 1px solid #333;*/
+		position: relative;
+		/*top: -.2rem;*/
+		color: #d72b2b;
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 420px){
+	#search-wap header span.zd-sou{
+		color: #d72b2b;
+		padding-left: 1.5rem;
+		font-size: 1.6rem;
+		margin-left: .5rem;
+	}
+	#search-wap header .zd-jiantou{
+		font-size: 3rem;
+		width: 4.2rem;
+		height: 4rem;
+		/*border: 1px solid #333;*/
+		position: relative;
+		/*top: -.2rem;*/
+		color: #d72b2b;
+	}
+}
+
+#search-wap .neirong{
+	width: 95%;
+	margin: 10rem auto 0;
+	text-align: center;
+	/*border: 1px solid #333;*/
+}
+#search-wap .neirong span{
+	font-size: 4rem;
+	color: #bfbfbf;
+	display: block;
+	margin-left: -5rem;
+	margin-bottom: 2rem;
+}
+#search-wap .neirong p{
+	font-size: 1.6rem;
+}
+/*搜索页面结束*/

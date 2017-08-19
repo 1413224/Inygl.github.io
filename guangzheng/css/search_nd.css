@@ -1,0 +1,513 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+p{
+	margin-bottom: 0;
+}
+a{
+	color: #333;
+}
+.more{
+	background: #fff;
+	color: #333;
+	text-align: center;
+	margin-top: .5rem;
+	padding: .5rem;
+}
+.wrap{
+	width: 100%;
+}
+.wrap .zd-bar{
+	background: #d72b2b;
+}
+.wrap .zd-bar a,.wrap .zd-bar h1{
+	color: #fff;
+}
+/*搜索开始*/
+.wrap .search{
+	width: 90%;
+	margin: 5rem auto 0.5rem;
+	position: relative;
+	height: 3rem;
+	/*border: 1px solid #333;*/
+}
+.wrap .search .search-tit{
+	
+}
+.wrap .search .search-tit .search-btn{
+	border: none;
+	color: #e7e7e7;
+	height: 3rem;
+}
+.wrap .search .search-tit span{
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #bfbfbf;
+	position: absolute;
+	top: .1rem;
+	right: .2rem;
+	font-size: 2rem;
+}
+/*搜索结束*/
+
+
+.cont_nd h1,.cont_zxzd h1,
+.cont_zqmz h1,.cont_wszl h1,
+.cont_lnta h1,.cont_lnsqmy h1{
+	font-size: 1.6rem;
+	font-weight: normal;
+	background: #fff;
+	padding: .5rem;
+}
+
+/*内容开始*/
+
+/*年度工作计划开始*/
+.cont_nd{
+	width: 90%;
+	margin: 0 auto;
+	/*background: #fff;*/
+	padding: .5rem;
+}
+
+.cont_nd .content{
+
+}
+.cont_nd .content .tit{
+	width: 100%;
+    box-sizing: border-box;
+    /* padding: .5rem 0; */
+    background: #fff;
+    height: 2.5rem !important;
+    line-height: 2.5rem;
+}
+.cont_nd .content .tit .c-head-1{
+	width: 15%;
+}
+.cont_nd .content .tit .c-head-2{
+	width: 50%;
+}
+.cont_nd .content .tit .c-head-3{
+	width: 35%;
+}
+.cont_nd .content .tit .c-head{
+	font-size: 1.4rem;
+	text-align: center;
+	color: #d72b2b;
+}
+.cont_nd .content .item{
+	width: 100%;
+    margin-top: .4rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #fff;
+}
+.cont_nd .content .item:active{
+	background: #ccc;
+} 
+.cont_nd .content .item .i-cont-1{
+	width: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cont_nd .content .item .i-cont-2{
+	width: 53%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cont_nd .content .item .i-cont-3{
+	width: 32%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cont_nd .content .item .i-cont{
+	font-size: 1.4rem;
+    color: #575757;
+    text-align: center;
+}
+/*年度工作计划结束*/
+
+
+/*政协制度汇编开始*/
+.cont_zxzd{
+	width: 90%;
+	margin: 0 auto;
+	padding: .5rem;
+}
+.cont_zxzd .content{
+
+}
+.cont_zxzd .content .tit{
+	width: 100%;
+    box-sizing: border-box;
+    padding: .5rem 0 .5rem .2rem;
+    background: #fff;
+    border-radius: .3rem;
+
+}
+.cont_zxzd .content .tit .c-head{
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+	color: #d72b2b;
+}
+@media screen and (max-width: 320px){
+	.cont_zxzd .content .tit .c-head{
+		/*border: 1px solid #ccc;*/
+		font-size: 1.4rem;
+		color: #575757;
+		text-align: center;
+		color: #d72b2b;
+	}
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+	.cont_zxzd .content .tit .c-head{
+		/*border: 1px solid #ccc;*/
+		font-size: 1.6rem;
+		color: #575757;
+		text-align: center;
+		color: #d72b2b;
+	}
+}
+.cont_zxzd .content .tit .c-head-1{
+	width: 11%;
+}
+.cont_zxzd .content .tit .c-head-2{
+	width: 64%;
+}
+.cont_zxzd .content .tit .c-head-3{
+	width: 25%;
+}
+
+.cont_zxzd .content .item{
+	width: 100%;
+	margin-top: .4rem;
+	/*margin-bottom: .2rem;*/
+	box-sizing: border-box;
+	padding: .3rem 0;
+	background: #fff;
+	border-radius: .3rem;
+}
+.cont_zxzd .content .item:active{
+	background: #ccc;
+} 
+.cont_zxzd .content .item .i-cont {
+	/*border: 1px solid #ccc;*/
+	font-size: 1.3rem;
+	color: #575757;
+	text-align: center;
+}
+@media screen and (max-width: 320px){
+	.cont_zxzd .content .item .i-cont {
+		/*border: 1px solid #ccc;*/
+		font-size: 1.3rem;
+		color: #575757;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+	.cont_zxzd .content .item .i-cont {
+		/*border: 1px solid #ccc;*/
+		font-size: 1.3rem;
+		color: #575757;
+		text-align: center;
+	}
+}
+.cont_zxzd .content .item .i-cont-1{
+	width: 10%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cont_zxzd .content .item .i-cont-2{
+	width: 65%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cont_zxzd .content .item .i-cont-3{
+	width: 25%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*政协制度汇编结束*/
+
+/*知情明政开始*/
+.cont_zqmz{
+	width: 90%;
+	margin: 0 auto;
+	padding: .5rem;
+}
+.cont_zqmz .content{
+	width: 100%;
+	padding-top: .5rem;
+}
+.cont_zqmz .content ul li{
+	background: #fff;
+	padding-left: .5rem;
+	margin-bottom: .5rem;
+}
+ .cont_zqmz .content ul li:active{
+	background: #ccc;
+} 
+.cont_zqmz .content li img{
+	float: left;
+	width: 34.4%;
+	/*height: 7rem;*/
+	min-height: 7rem;
+	max-height: 7rem;
+
+}
+.cont_zqmz .content li .right{
+	width: 57%;
+	float: left;
+	margin-left: 1rem;
+	/*border: 1px solid #333;*/
+}
+.cont_zqmz .content li .right h2{
+	color: #333;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	width: 100%;
+ 	/*height: 3rem;
+	min-height: 3rem; */
+	font-weight: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	/*border: 1px solid #ccc;*/
+}
+.cont_zqmz .content li .right p{
+	margin-top: 1.2rem;
+	margin-bottom: 0;
+}
+/*知情明政结束*/
+
+/*文史资料开始*/
+.cont_wszl{
+	width: 90%;
+	margin: 0 auto;
+	/*background: #fff;*/
+	padding: .5rem;
+}
+.cont_wszl .content{
+	width: 100%;
+	
+	margin: 1rem auto 0;
+}
+.cont_wszl .content .items{
+	width: 100%;
+	height: 8rem;
+	margin-bottom: .5rem;
+	background: #fff;
+	/*border: 1px solid #333;*/
+}
+.cont_wszl .content .items:active{
+	background: #ccc;
+} 
+@media screen and (min-width: 321px) and (max-width: 375px){
+	.cont_wszl .content .items{
+		width: 100%;
+		height: 9rem;
+		margin-bottom: .5rem;
+		background: #fff;
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 430px){
+	.cont_wszl .content .items{
+		width: 100%;
+		height: 10rem;
+		margin-bottom: .5rem;
+		background: #fff;
+	}
+}
+.cont_wszl .content .items .left{
+	width: 28%;
+	height: 100%;
+	/*border: 1px solid #333;*/
+}
+.cont_wszl .content .items .left img{
+	width: 100%;
+	height: 100%;
+}
+
+.cont_wszl .content .items .right{
+	width: 72%;
+	height: 100%;
+	padding-left: 3rem;
+	padding-top: .7rem;
+	/*border: 1px solid #ccc;*/
+}
+.cont_wszl .content .items .right p{
+	color: #333;
+	margin-bottom: .5rem;
+}
+@media screen and (min-width: 321px) and (max-width: 375px){
+	.cont_wszl .content .items .right{
+		width: 72%;
+		height: 100%;
+		padding-left: 3rem;
+		padding-top: 1rem;
+		/*border: 1px solid #ccc;*/
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 420px){
+	.cont_wszl .content .items .right{
+		width: 72%;
+		height: 100%;
+		padding-left: 3.5rem;
+		padding-top: 1.5rem;
+		/*border: 1px solid #ccc;*/
+	}
+}
+/*文史资料结束*/
+
+/*历年提案开始*/
+.cont_lnta{
+	width: 90%;
+	margin: 0 auto;
+	/*background: #fff;*/
+	padding: .5rem;
+}
+.cont_lnta .content .tit{
+	width: 100%;
+	box-sizing: border-box;
+	/*padding: .5rem 0;*/
+	background: #fff;
+	height: 2.5rem !important;
+	line-height: 2.5rem;
+}
+.cont_lnta .content .tit .c-head{
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+	color: #d72b2b;
+}
+.cont_lnta .content .tit .c-head-1{
+	width: 15%;
+}
+.cont_lnta .content .tit .c-head-2{
+	width: 50%;
+}
+.cont_lnta .content .tit .c-head-3{
+	width: 35%;
+}
+.cont_lnta .content .item{
+	width: 100%;
+	margin-top: .4rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: #fff;
+	/*	*/
+}
+.cont_lnta .content .item:active{
+	background: #ccc;
+} 
+.cont_lnta .content .item .i-cont {
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+}
+.cont_lnta .content .item .i-cont-1{
+	width: 15%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cont_lnta .content .item .i-cont-2{
+	width: 53%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cont_lnta .content .item .i-cont-3{
+	width: 32%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+} 
+/*历年提案结束*/
+
+/*历年社情民意开始*/
+.cont_lnsqmy{
+	width: 90%;
+	margin: 0 auto;
+	/*background: #fff;*/
+	padding: .5rem;
+}
+.content{
+
+}
+.cont_lnsqmy .content .tit{
+	width: 100%;
+	box-sizing: border-box;
+	/*padding: .5rem 0;*/
+	background: #fff;
+	height: 2.5rem !important;
+	line-height: 2.5rem;
+}
+.cont_lnsqmy .content .tit .c-head{
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+	color: #d72b2b;
+}
+.cont_lnsqmy .content .tit .c-head-1{
+	width: 15%;
+}
+.cont_lnsqmy .content .tit .c-head-2{
+	width: 80%;
+}
+.cont_lnsqmy .content .tit .c-head-3{
+	/*width: 35%;*/
+}
+.cont_lnsqmy .content .item{
+	width: 100%;
+	margin-top: .4rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: #fff;
+	/*	*/
+}
+.cont_lnsqmy .content .item:active{
+	background: #ccc;
+} 
+.cont_lnsqmy .content .item .i-cont {
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+}
+.cont_lnsqmy .content .item .i-cont-1{
+	width: 15%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.cont_lnsqmy .content .item .i-cont-2{
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*历年社情民意结束*/
+
+
+
+/*内容结束*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="search-wap">
+		<header>
+			<a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left zd-jiantou"></a>
+			<div class="sear mui-pull-left">
+				<span class="iconfont icon-fangdajing mui-pull-left"></span>
+				<input type="text" name="" value="请输入关键字" class="mui-pull-left zd-search">
+			</div>
+			<span class="mui-pull-left zd-sou">搜索</span>
+		</header>
+
+		<!-- 搜索内容开始 -->
+		<div class="neirong">
+			<span class="iconfont icon-fangdajing"></span>
+			<p>请输入关键词，搜索您感兴趣的数据库资料</p>
+		</div>
+		<!-- 搜索内容结束 -->
+	</div>
+
+	<script type="text/javascript">
+		mui('body').on('tap','a',function(){
+    		window.top.location.href=this.href;
+		});
+		$(function(){
+			$(".zd-search").focus(function(event) {
+				if($(this).val()=="请输入关键字"){
+					$(this).val("");
+				}
+			});
+			$(".zd-search").blur(function(){
+				if($(this).val()==""){
+					$(this).val("请输入关键字");
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>

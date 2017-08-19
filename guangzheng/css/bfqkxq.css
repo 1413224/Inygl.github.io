@@ -1,0 +1,160 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+p{
+	margin-bottom: 0;
+	color: #404040;
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+	 font-size: 1.4rem;
+}
+h1{
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+}
+
+
+
+
+.bfqkxq{
+	width: 100%;
+}
+.bfqkxq .zd-bar{
+	background: #d72b2b;
+}
+.bfqkxq .zd-bar a,.bfqkxq .zd-bar h1{
+	color: #fff;
+}
+/*内容开始*/
+.content{
+	width: 100%;
+	margin-top: 3.5rem;
+	background: #fff;
+}
+.content .neirong{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	box-sizing: border-box;
+	/*border: 1px solid #333;*/
+}
+.content .neirong .cont{
+
+}
+.content .neirong .cont h1{
+	font-size: 1.4rem;
+	text-align: center;
+	font-weight: normal;
+}
+.content .neirong .cont .name{
+	margin-top: 2rem;
+}
+.content .neirong .cont .tian{
+	margin-top: 2.2rem;
+	margin-bottom: 1rem;
+}
+.content .neirong .cont-bot{
+	/*border: 1px solid #333;*/
+}
+.content .neirong .cont-bot p{
+	text-align: right;
+}
+.content .neirong .cont-bot .danwei{
+	padding-right: 2rem;
+	margin-bottom: .5rem;
+}
+.content .neirong .cont-bot .date{
+	padding-right: 1rem;
+}
+.content .neirong .bottom{
+	width: 100%;
+	margin-top: 3rem;
+}
+.content .neirong .bottom .fzname{
+	width: 30%;
+}
+.content .neirong .bottom .jinban{
+	width: 30%;
+}
+.content .neirong .bottom span{
+	/*border: 1px solid #ccc;*/
+	font-size: 1.3rem;
+	display: inline-block;
+	/*width: calc(100%/3);*/
+	width: 40%;
+}
+/*内容结束*/
+
+/*留言开始*/
+.liuyan{
+	width: 100%;
+	/*border: 1px solid #333;*/
+	margin-top: 1rem;
+}
+.liuyan h2{
+	font-size: 1.5rem;
+	color: #d72b2b;
+	font-weight: normal;
+	padding-bottom: .5rem;
+	padding-left: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+.liuyan .cont{
+	width: 90%;
+	margin: 0 auto;
+}
+.liuyan .cont .time{
+	float: right;
+	padding-right: .5rem;
+}
+.liuyan .contgl{
+	width: 90%;
+	margin: 1rem auto 0;
+	background: #e2c4c4;
+	border-radius: .3rem;
+}
+.liuyan .contgl .time{
+	float: right;
+	padding-right: .5rem;
+}
+/*留言结束*/
+.bfqkxq .footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+	border-top: 1px solid #d7d2d2;
+}
+.bfqkxq .footer li{
+	float: left;
+	/*width: 33%;*/
+	width: calc(100%/3);
+	text-align: center;
+	padding: .5rem 0;
+	/*border:1px solid #ccc;*/
+}
+.bfqkxq .footer li a{
+	/*display: block;*/
+
+}
+.bfqkxq .footer li a span{
+	font-size: 2.5rem;
+	color: #d72b2b;
+}
+
+/*变化字体*/
+/*.font{
+	font-size: 1.8rem;
+}*/
+.zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+

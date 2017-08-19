@@ -1,0 +1,117 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+body{
+	background: #fff;
+}
+p{
+	margin-bottom: 0;
+	font-size: 1.4rem;
+}
+.wszlxq{
+	width: 100%;
+	background: #fff;
+}
+.wszlxq .zd-bar{
+	background: #d72b2b;
+}
+.wszlxq .zd-bar a,.wszlxq .zd-bar h1{
+	color: #fff;
+}
+/*内容开始*/
+.content{
+	width: 90%;
+	margin: 5rem auto 0;
+}
+.content .tit{
+	
+}
+.content .tit h1{
+	font-size: 1.6rem;
+	text-align: center;
+	padding-bottom: .7rem;
+}
+
+.neirong{
+	margin-top: 3.5rem;
+	height: 15rem;
+	box-sizing: border-box;
+	/*border: 1px solid #333;*/
+}
+.neirong .left{
+	width: 45%;
+	height: 100%;
+	/*overflow: hidden;*/
+	/*border: 1px solid #ccc;*/
+}
+.neirong .left img{
+	width: 100%;
+	height: 100%;
+}
+
+.neirong .right{
+	width: 55%;
+	height: 100%;
+	padding-left: 2rem;
+	background: #f5f5f5;
+}
+.neirong .right p{
+	font-size: 1.5rem;
+
+}
+.neirong .right h2{
+	font-size: 1.5rem;
+	color: #a9a9a9;
+	text-align: center;
+}
+.neirong .right p a{
+	color: #a9a9a9;
+}
+.neirong .right p.cur a{
+	color: #fff;
+}
+
+.article{
+	margin-top: 1rem;
+	text-indent: 2.8rem;
+	/*border: 1px solid #333;*/
+}
+.article p{
+	font-size: 1.5rem;
+	text-align: justify;
+}
+/*内容结束*/
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: #f5f5f5;
+	border-top: 1px solid #d7d2d2;
+}
+.footer li{
+	float: left;
+	/*width: 33%;*/
+	width: calc(100%/3);
+	text-align: center;
+	padding: .5rem 0;
+	/*border:1px solid #ccc;*/
+}
+.footer li a{
+	/*display: block;*/
+
+}
+.footer li a span{
+	font-size: 2.5rem;
+	color: #d72b2b;
+}
+
+.zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}

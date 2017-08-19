@@ -1,0 +1,156 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+p{
+	margin-bottom: 0;
+	color: #404040;
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+	 font-size: 1.4rem;
+}
+h1{
+	letter-spacing: .1rem;
+	 word-wrap: break-word;
+}
+
+
+
+
+.wrap{
+	width: 100%;
+}
+.wrap .zd-bar{
+	background: #d72b2b;
+}
+.wrap .zd-bar a,.wrap .zd-bar h1{
+	color: #fff;
+}
+
+
+.content{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 50px;
+	
+}
+.content h1{
+	font-size: 1.8rem;
+	font-weight: normal;
+	padding: .7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+.c_head{
+	border: 1px solid transparent;
+	display: flex;
+}
+.c_head .left{
+	/*border: 1px solid #ccc;*/
+	flex: 2;
+	background: #fff;
+	margin-right: .2rem;
+	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.c_head .right{
+	/*border: 1px solid #f00;*/
+	flex: 8;
+
+}
+.c_head .right .top{
+	border: 1px solid transparent;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	height: 3.3rem;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+.c_head .right .top span{
+	display: inline-block;
+	/* text-align: right;
+	width: 100%; */
+	position: absolute;
+	top: 1.2rem;
+	right: 0;
+}
+.c_head .right .top h2{
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+.c_head .right .bottom{
+	/*border: 1px solid #ccc;*/
+	display: flex;
+	height: 4rem;
+	margin-top: .15rem;
+}
+.c_head .right .bottom p{
+	background: #fff;
+	margin-left: .18rem;
+	flex: 1;
+	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.c_head .right .bottom p:nth-child(1){
+	margin-left: 0;
+}
+@media screen and (min-width: 376px) and (max-width: 430px){
+	.c_head .right .bottom p{
+		background: #fff;
+		margin-left: .15rem;
+		flex: 1;
+		font-size: 1.6rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.items{
+	display: flex;
+	border: 1px solid transparent;
+}
+.items .left{
+	flex: 2;
+	background: #fff;
+	margin-right: .2rem;
+	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.items .right{
+	flex: 8;
+	display: flex;
+	height: 4rem;
+}
+.items .right p{
+	background: #fff;
+	margin-left: .18rem;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.items .right p:nth-child(1){
+	margin-left: 0;
+}
+@media screen and (min-width: 376px) and (max-width: 430px){
+	.items .right p{
+		background: #fff;
+		margin-left: .15rem;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

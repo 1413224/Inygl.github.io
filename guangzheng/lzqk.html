@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>履职情况</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lzqk.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="lzqk">
+		<!-- 头部开始 -->
+		<header class="mui-bar mui-bar-nav zd-bar">
+			<a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">履职情况</h1>
+		</header>
+		<!-- 头部结束 -->
+		
+		<div class="content">
+			<div class="tit">您在区政协204名政协委员中排名第1位</div>
+			<div class="items clearfix">
+				<p class="items-p items1 fl">履职得分项</p>
+				<p class="items-p items2 fl">得分时间</p>
+				<!-- <p class="items-p items3 fl">得分</p> -->
+			</div>
+			<div class="items clearfix">
+				<p class="items-p items1 fl">参加会议</p>
+				<p class="items-p items2 fl">2016-06-21</p>
+				<!-- <p class="items-p items3 fl">5</p> -->
+			</div>
+			<div class="items clearfix">
+				<p class="items-p items1 fl">参加视察</p>
+				<p class="items-p items2 fl">2016-06-20</p>
+				<!-- <p class="items-p items3 fl">5</p> -->
+			</div>
+			<div class="items clearfix">
+				<p class="items-p items1 fl">撰写提案</p>
+				<p class="items-p items2 fl">2016-06-24</p>
+				<!-- <p class="items-p items3 fl">5</p> -->
+			</div>
+			<div class="items clearfix">
+				<p class="items-p items1 fl">撰写社情民意</p>
+				<p class="items-p items2 fl">2016-06-21</p>
+				<!-- <p class="items-p items3 fl">5</p> -->
+			</div>
+			<!-- 最后统计
+			<div class="items item-last clearfix">
+				<p class="items-p items1 fl">合计</p>
+				<p class="items-p items-last fl">15</p>
+			</div> -->
+
+			<div class="mui-button-row zdy-btn">
+				<a href="lzdfxz.html"><button type="button" class="mui-btn mui-btn-danger">查看履职得分细则</button></a>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<ul>
+				<li><a href="javascript:;"><span class="iconfont icon-Aa" id="font"></span></a></li>
+				<li><a href="javascript:;"><span class="iconfont icon-shoucang5" id="shoucang"></span></a></li>
+				<li><a href="javascript:;"><span class="iconfont icon-daochu" id="zhezhao"></span></a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="zhezhao" style="display: none;"></div>
+
+	<script type="text/javascript">
+		$(function(){
+
+			$("#shoucang").click(function(){
+				$(this).toggleClass("icon-shoucangfill")
+			});
+
+
+			var html = document.getElementsByTagName('html')[0];
+			$("#font").click(function(){
+
+				if(html.style.fontSize==11+'px'){
+
+					html.style.fontSize=10+'px';
+					$(".lzqk .footer li a span").css("font-size","2.5rem");
+
+				}else{
+					html.style.fontSize=11+'px';
+
+					$(".lzqk .footer li a span").css("font-size","2.23rem");
+				}	
+				
+			});
+
+			$("#zhezhao").click(function(){
+				$(".zhezhao").show();
+				return false;
+			});
+
+			$('html,body').click(function(){
+				$(".zhezhao").hide();
+			});
+
+		});
+
+	</script>
+</body>
+</html>

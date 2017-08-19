@@ -1,0 +1,70 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+
+body{
+	background: #fff;
+}
+p{
+	margin-bottom: 0;
+	font-size: 1.4rem;
+	/*word-wrap: break-word;*/
+}
+.wrap{
+	width: 100%;
+}
+.wrap{
+	width: 100%;
+}
+.wrap .zd-bar{
+	background: #d72b2b;
+}
+.wrap .zd-bar a,.wrap .zd-bar h1{
+	color: #fff;
+}
+/*内容开始*/
+.content{
+	width: 90%;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+	/*border:1px solid #333;*/
+}
+.content h1{
+	margin-top:5rem; 
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+}
+.content .date{
+	margin-top: 1.5rem;
+	font-size: 1.4rem;
+
+}
+
+.content .article{
+	margin-top: 1.5rem;
+	padding-bottom: 5rem;
+}
+.content .article h2{
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+.content .article p{
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	background: #efeff4;
+	margin-bottom: .5rem;
+	padding: .5rem;
+}
+.content .article p:active{
+	background: #fff;
+}
+/*内容结束*/
+
+
+
+
+
+

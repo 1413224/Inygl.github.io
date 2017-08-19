@@ -1,0 +1,109 @@
+
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+.ico_tx{
+	font-size: 2.5rem !important;
+	position: relative;
+	top: .8rem;
+}
+.head{
+	background: #d72b2b;
+	height: 3.9rem;
+}
+.head a,.head h1{
+	color: #fff;
+}
+.head .search{
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	/*border: 1px solid #333;*/
+	height: auto;
+	padding-left: 5%;
+}
+.head .search span{
+	width: 20%;
+	/*border: 1px solid #ccc;*/
+}
+.head .search span img{
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 50%;
+	position: relative;
+	top: .3rem;
+}
+.head .search input{
+	width: 50%;
+	position: relative;
+	top: -.7rem;
+	left: .5rem;
+	border: none;
+ 	background: transparent;
+	color: #fff; 
+	padding-left: 2rem;
+}
+
+
+/*我的收藏页面开始*/
+#shoucang{
+	width: 100%;
+}
+#shoucang .zd-bar{
+	background: #d72b2b;
+}
+#shoucang .zd-bar a{
+	color: #fff;
+}
+#shoucang header h1{
+	color: #fff;
+}
+
+/*内容开始*/
+#shoucang .content{
+	width: 100%
+}
+#shoucang .content ul li{
+	background: #fff;
+	padding-left: .5rem;
+	margin-bottom: .5rem;
+}
+#shoucang .content li img{
+	float: left;
+	width: 34.4%;
+	/*height: 7rem;*/
+	min-height: 7rem;
+	max-height: 7rem;
+
+}
+#shoucang .content li .right{
+	width: 57%;
+	float: left;
+	margin-left: 1rem;
+	/*border: 1px solid #333;*/
+}
+#shoucang .content li .right h2{
+	color: #333;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 100%;
+ 	/*height: 3rem;
+	min-height: 3rem; */
+	font-weight: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	/*border: 1px solid #ccc;*/
+}
+#shoucang .content li .right p{
+	margin-top: 1.2rem;
+	margin-bottom: 0;
+	font-size: 1.3rem;
+}
+/*内容结束*/
+
+/*我的收藏页面结束*/

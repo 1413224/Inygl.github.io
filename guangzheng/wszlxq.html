@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文史资料详情</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wszlxq.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+</head>
+<body>
+	<div class="wszlxq">
+		<!-- 头部开始 -->
+		<header class="mui-bar mui-bar-nav zd-bar">
+			<a href="" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!-- <h1 class="mui-title">留言详情</h1> -->
+		</header>
+		<!-- 头部结束 -->
+
+		<!-- 内容开始 -->
+		<div class="content">
+			<div class="tit">
+				<h1>《扬州名人传》</h1>
+				<div class="date">
+					<p class="mui-pull-left">作者：张连生</p>
+					<p class="mui-pull-right">发布日期：2013-01-01</p>
+				</div>
+			</div>
+
+			<div class="neirong clearfix">
+				<div class="left mui-pull-left">
+					<img src="images/book1.jpg">
+				</div>
+				<div class="right mui-pull-left">
+					<h2>目录</h2>
+					<p><a href="">第一章</a></p>
+					<p><a href="">第二章</a></p>
+					<p class="cur"><a href="">第三章</a></p>
+				</div>
+			</div>
+
+			<div class="article">
+				<p>
+					张连生编著的《扬州名人传》力求反映扬州历史上社会各层面人物的事迹，因此所收录的人物类型尽量做到多样化。例如《名宦传》中，上至帝王、诸侯、宰相，中至州刺史、郡太守、节度使、转运使、盐运使、总督、巡抚、御史，下至知府、知州、知县、吏员、教授、教谕等，凡是在扬州地区的业绩，都有所记录。
+				</p>
+			</div>
+		</div>
+		<!-- 内容结束 -->
+		<div class="footer">
+			<ul>
+				<li><a href="javascript:;"><span class="iconfont icon-Aa" id="font"></span></a></li>
+				<li><a href="javascript:;"><span class="iconfont icon-shoucang5" id="shoucang"></span></a></li>
+				<li><a href="javascript:;"><span class="iconfont icon-daochu" id="zhezhao"></span></a></li>
+			</ul>
+		</div>
+
+
+	</div>
+	
+	<div class="zhezhao" style="display: none;"></div>
+
+	<script type="text/javascript">
+		$(function(){
+
+			$("#shoucang").click(function(){
+				$(this).toggleClass("icon-shoucangfill")
+			});
+
+
+			var html = document.getElementsByTagName('html')[0];
+			$("#font").click(function(){
+
+				if(html.style.fontSize==11+'px'){
+
+					html.style.fontSize=10+'px';
+					$(".footer li a span").css("font-size","2.5rem");
+
+				}else{
+					html.style.fontSize=11+'px';
+
+					$(".footer li a span").css("font-size","2.23rem");
+				}	
+				
+			});
+
+			$("#zhezhao").click(function(){
+				$(".zhezhao").show();
+				return false;
+			});
+
+			$('html,body').click(function(){
+				$(".zhezhao").hide();
+			});
+
+		});
+
+	</script>
+
+
+
+</body>
+</html>

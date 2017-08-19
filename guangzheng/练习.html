@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+    <script type="text/javascript" src="js/mui.btn.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	
+    <button type="button" data-loading-icon="mui-spinner mui-spinner-white" class="mui-btn mui-btn-primary">确认</button>
+
+
+<script type="text/javascript">
+    mui(document.body).on('tap','.mui-btn',function(){
+        mui(this).button('loading');
+        setTimeout(function() {
+        mui(this).button('reset');
+    }.bind(this), 2000);
+    });
+</script>
+</body>
+</html>

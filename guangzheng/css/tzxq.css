@@ -1,0 +1,49 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+	background: #fff;
+}
+p{ 
+	margin-bottom: 0;
+}
+h1{
+	margin: 0;
+}
+a{
+	color: #333;
+}
+.tzxq{
+	width: 100%;
+}
+.tzxq .zd-bar{
+	background: #d72b2b;
+}
+.tzxq .zd-bar a,.tzxq .zd-bar h1{
+	color: #fff;
+}
+.content{
+	width: 100%;
+	margin-top: 44px;
+}
+.content .items{
+	background: #fff;
+	padding: .5rem;
+}
+.content .items h1{
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+	/*padding-top: 5px;*/
+}
+.content .items .cont{
+	margin-top: 1rem;
+}
+.content .items .article{
+	margin-top: 1rem;
+}
+.content .items .article p{
+	font-size: 1.4rem;
+	color: #333;
+	text-indent: 2.4rem;
+	text-align: justify;
+}

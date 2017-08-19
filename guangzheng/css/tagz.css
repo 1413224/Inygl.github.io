@@ -1,0 +1,151 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+#tagz{
+	width: 100%;
+	padding-bottom: 1rem;
+}
+#tagz .zd-bar{
+	background: #d72b2b;
+}
+#tagz .zd-bar a,#tagz .zd-bar h1{
+	color: #fff;
+}
+#tagz .search{
+	width: 90%;
+	margin: 5rem auto;
+	position: relative;
+	height: 3rem;
+	/*border: 1px solid #333;*/
+}
+#tagz .search .search-tit{
+
+}
+#tagz .search .search-tit .search-btn{
+	border: none;
+	color: #e7e7e7;
+	height: 3rem;
+}
+#tagz .search .search-tit span{
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align:center;
+	color: #bfbfbf;
+	position: absolute;
+	top: .1rem;
+	right: .2rem;
+	font-size: 2rem;
+}
+/*内容开始*/
+#tagz .content{
+	width: 90%;
+	margin: -3.5rem auto;
+	/*border: 1px solid #333;*/
+}
+#tagz .content p{
+	margin-bottom: 0;
+}
+#tagz .content .tit{
+	width: 100%;
+	box-sizing: border-box;
+	padding: .5rem 0;
+	background: #fff;
+	border-radius: .3rem;
+
+}
+#tagz .content .tit .c-head{
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+	color: #d72b2b;
+}
+#tagz .content .tit .c-head-1{
+	width: 15%;
+}
+#tagz .content .tit .c-head-2{
+	width: 50%;
+}
+#tagz .content .tit .c-head-3{
+	width: 35%;
+}
+
+
+
+#tagz .content .item{
+	width: 100%;
+	margin-top: .4rem;
+	/*margin-bottom: .2rem;*/
+	box-sizing: border-box;
+	padding: .3rem 0;
+	background: #fff;
+	border-radius: .3rem;
+}
+ #tagz .content .item:active{
+	background: #ccc;
+} 
+#tagz .content .item .i-cont {
+	/*border: 1px solid #ccc;*/
+	font-size: 1.4rem;
+	color: #575757;
+	text-align: center;
+}
+#tagz .content .item .i-cont-1{
+	width: 15%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tagz .content .item .i-cont-2{
+	width: 50%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tagz .content .item .i-cont-3{
+	width: 35%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*内容结束*/
+
+/*分页开始*/
+.cont_page{
+	 width: 90%;
+	text-align: center; 
+	margin: 4.5rem auto 0;
+	/*border: 1px solid #333;*/
+}
+
+
+/* .cont_page .mui-active{
+	background: #d72b2b;
+} */
+.mui-pagination>li.mui-active>a{
+	background:#d72b2b;
+	border-color: #d72b2b;
+}
+.mui-pagination>li{
+	/* border-radius: 2rem;
+	margin: .5rem; */
+}
+.mui-pagination>li>a{
+	color: #333;
+	margin: .1rem;
+	border-radius: .2rem;
+	font-size: 1.4rem;
+}
+.btn{
+	width: 40%;
+	margin: 0 auto;
+}
+.zdy-btn{
+	width: 100%;
+	background: #d72b2b;
+}
+/*分页结束*/

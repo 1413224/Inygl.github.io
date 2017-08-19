@@ -1,0 +1,40 @@
+/*控制字体*/
+.rangeslider, .rangeslider__fill{
+	height: 10px;
+	/*background: #d72b2b;*/
+}
+.rangeslider__handle{
+	width: 22px;
+	height: 22px;
+	top: -6px;
+}
+.rangeslider__handle:after{
+	width: 12px;
+	height: 12px;
+}
+.rangeslider__fill{
+	background: #d72b2b;
+}
+
+.step{
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	position: absolute;
+	bottom: 40px;
+	display: none;
+}
+.setup{
+	width: 50%;
+	margin: 0 auto;
+}
+.setup .sp_size{
+	position: relative;
+	top: -4px;
+	font-size: 12px;
+}
+.setup .ziti{
+	/*border: 1px solid #333;*/
+	display: flex;
+	justify-content: space-between;
+}

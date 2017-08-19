@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布通知</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/select2.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/fbtz.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/select2.min.js"></script>
+	<script type="text/javascript" src="js/zh-CN.js"></script> -->
+</head>
+<body>
+	<div class="fbtz">
+		<header class="mui-bar mui-bar-nav zd-bar">
+			<a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">发布通知</h1>
+		</header>
+
+
+		<div class="type_wy">
+				<p class="sel_tit">通知委员类型：</p>
+				<div class="sel">
+					<select id="sel_change">
+						<option value="1">全部</option>
+						<option value="2">指定某界别委员</option>
+						<option value="3">指定某位委员</option>
+					</select>
+				</div>
+			</div>
+
+
+		<!-- 内容开始 -->
+		<div class="content">
+			<!-- 第一页开始 -->
+			<div class="page_one">
+				<div class="tit">
+					<p class="tz_tit">通知标题：</p>
+					<input type="text" name="" placeholder="请输入标题">
+				</div>
+				<div class="article">
+					<p class="ar_tit">正文：</p>
+					<textarea placeholder="请输入内容"></textarea>
+				</div>
+				<div class="btn">
+					<button type="button" class="mui-btn mui-btn-danger zdy-btn">发布通知</button>
+				</div>
+			</div>
+			<!-- 第一页结束 -->
+			<!-- 第二页开始 -->
+			<div class="page_two" style="display: none;">
+				<div class="p2_type">
+					<p class="tit">类型：</p>
+					<input type="text" name="" placeholder="请输入类型">
+				</div>
+				<div class="p2_sel">
+					<p class="p2_sel_tit">界别：</p>
+					<div class="sel">
+						<select>
+							<option value="">界别</option>
+							<option value="">政别</option>
+							<option value="">指定某位委员</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="p2btn">
+					<button type="button" class="mui-btn mui-btn-danger zdy-btn">添加选中界别的委员</button>
+				</div>
+
+				<div class="p2_search">
+					<p>委员搜索：</p>
+					<span class="iconfont icon-fangdajing"></span>
+					<input type="text" placeholder="请输入关键字" id="search">
+					<div class="search_cont">
+						<ul>
+							<li>111</li>
+							<li>222</li>
+							<li>333</li>
+							<li>444</li>
+						</ul>
+					</div>
+					<!-- <select class="js-example-basic-multiple" multiple="multiple">
+					  						<option value="AL">Alabama</option>
+					  						<option value="WY">Wyoming</option>
+					  						<option value="AL">Alabama</option>
+					  						<option value="WY">Wyoming</option>
+					  						<option value="AL">Alabama</option>
+					  						<option value="WY">Wyoming</option>
+					  						<option value="AL">Alabama</option>
+					  						<option value="WY">Wyoming</option>
+					</select> -->
+				</div>
+
+				<div class="p2_xuan">
+					<p class="yixuan">已选人员：</p>
+					<div class="items clearfix">
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商1</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商2</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商3</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第二页结束 -->
+
+			<!-- 第三页开始 -->
+			<div class="page_three" style="display: none;">
+				<div class="p2_type">
+					<p class="tit">类型：</p>
+					<input type="text" name="" placeholder="请输入类型">
+				</div>
+				<div class="p2_sel">
+					<p class="p2_sel_tit">界别：</p>
+					<div class="sel">
+						<select>
+							<option value="">界别</option>
+							<option value="">政别</option>
+							<option value="">指定某位委员</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="p2btn">
+					<button type="button" class="mui-btn mui-btn-danger zdy-btn">添加选中界别的委员</button>
+				</div>
+
+				<div class="p2_search">
+					<p>委员搜索：</p>
+					<span class="iconfont icon-fangdajing"></span>
+					<input type="text" placeholder="请输入关键字" id="search_p3">
+					<div class="search_cont">
+						<ul>
+							<li>111</li>
+							<li>222</li>
+							<li>333</li>
+							<li>444</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="p2_xuan">
+					<p class="yixuan">已选人员：</p>
+					<div class="items clearfix">
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商1</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商2</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商3</p>
+						</div>
+						<div class="item mui-pull-left">
+							<span class="close"><img src="images/guanbi.jpg"></span>
+							<p class="item_cont">工商4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第三页结束 -->
+
+
+			
+			<!-- <div class="page_three">
+				
+			</div> -->
+
+
+		</div>
+		<!-- 内容结束 -->
+	</div>
+
+
+<script type="text/javascript">
+	mui('body').on('tap','a',function(){
+    	window.top.location.href=this.href;
+	});
+
+	document.body.addEventListener("touchstart",function(){})
+
+	$(function(){
+		$(".page_two .items .item .close").on("touchstart",function(){
+			// $(".page_two .items .item").hide();
+			$(this).parent().hide();
+		});	
+		$("#sel_change").change(function(){
+			if($("#sel_change option:selected").val()==2){
+				$(".page_two").show().siblings().hide();
+			}else if($("#sel_change option:selected").val()==1){
+				$(".page_one").show().siblings().hide();
+			}else if($("#sel_change option:selected").val()==3){
+				$(".page_three").show().siblings().hide();
+				console.log(3)
+			}
+
+		});
+
+		$("#search").bind('input propertychange',function(){
+			if($(this).val()!=""){
+				$(".page_two .p2_search .search_cont").show();
+			}else if($(this).val()==""){
+				$(".page_two .p2_search .search_cont").hide();
+			}
+		});
+		$("#search_p3").bind('input propertychange',function(){
+			if($(this).val()!=""){
+				$(".page_three .p2_search .search_cont").show();
+			}else if($(this).val()==""){
+				$(".page_three .p2_search .search_cont").hide();
+			}
+		})
+
+		/*$(".js-example-basic-multiple").select2({
+			placeholder: "请输入关键字查询",
+			language: "zh-CN"
+		});
+		$(".select2-results__option").text("sss")*/
+
+	});
+</script>
+</body>
+</html>

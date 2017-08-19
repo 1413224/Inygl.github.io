@@ -1,0 +1,312 @@
+html,body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+	background: #fff;
+}
+p{ 
+	margin-bottom: 0;
+	font-size: 1.4rem;
+	color: #333;
+}
+h1{
+	margin: 0;
+}
+a{
+	color: #333;
+}
+textarea{
+	background: #f5f5f5 !important;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { 
+color: #afafaf; 
+font-size: 1.4rem;
+} 
+input:-moz-placeholder,textarea:-moz-placeholder { 
+color: #afafaf; 
+font-size: 1.4rem;
+} 
+.fbtz{
+	width: 100%;
+}
+.fbtz .zd-bar{
+	background: #d72b2b;
+}
+.fbtz .zd-bar a,.fbtz .zd-bar h1{
+	color: #fff;
+}
+
+
+
+.type_wy{
+	width: 90%;
+	margin: 44px auto 0;
+	padding-top: 1rem;
+}
+.type_wy p{
+	color: #333;
+
+	/*border: 1px solid #eee;*/
+	font-size: 1.6rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+.type_wy .sel{
+	background: #f5f5f5;
+}
+.type_wy select{
+	/*border: 1px solid #ccc !important;*/
+	margin-bottom: 0;
+	border: none;
+	padding: .5rem;
+	background: transparent;
+	background: url(../images/xiala.png) no-repeat;
+	background-size: 6% 45%;
+	background-position: 97% center;
+	padding-left: .5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 375px){
+	.type_wy select{
+		/*border: 1px solid #ccc !important;*/
+		margin-bottom: 0;
+		border: none;
+		padding: .5rem;
+		background: transparent;
+		background: url(../images/xiala.png) no-repeat;
+		background-size: 5% 45%;
+		background-position: 97% center;
+		padding-left: .5rem;
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 430px){
+	.type_wy select{
+		/*border: 1px solid #ccc !important;*/
+		margin-bottom: 0;
+		border: none;
+		padding: .5rem;
+		background: transparent;
+		background: url(../images/xiala.png) no-repeat;
+		background-size: 5% 45%;
+		background-position: 97% center;
+		padding-left: .5rem;
+	}
+}
+
+/*第一页开始*/
+.content .page_one{
+	/*border: 1px solid #333;*/
+	width: 90%;
+	margin: 0 auto;
+}
+
+.content .page_one .tit{
+	margin-top: 1.5rem;
+}
+.content .page_one .tit .tz_tit{
+	font-size: 1.6rem;
+	color: #333;
+	margin-bottom: .5rem;
+}
+.content .page_one .tit input{
+	padding: .5rem;
+	border: none;
+	background: #f5f5f5;
+}
+
+.content .page_one .article .ar_tit{
+	font-size: 1.6rem;
+	color: #333;
+	margin-bottom: .5rem;
+}
+.content .page_one .article textarea{
+	height: 17rem;
+	border: none;
+}
+.content .page_one .btn{
+	width: 100%;
+	margin-top: 1rem;
+	text-align: center;
+}
+.content .page_one .btn .zdy-btn{
+	width: 100%;
+}
+/*第一页结束*/
+
+/*第二页开始*/
+.page_two,.page_three{
+	width: 90%;
+	margin: 1rem auto 0;
+}
+.page_two .p2_type,.page_three .p2_type{
+	/*border: 1px solid #333;*/
+}
+.page_two .p2_type p,.page_three .p2_type p{
+	font-size: 1.6rem;
+	margin-bottom: .5rem;
+}
+.page_two .p2_type input,.page_three .p2_type input{
+	border: none;
+	background: #f5f5f5;
+}
+.page_two .p2_sel_tit,.page_three .p2_sel_tit{
+	margin-bottom: .5rem;
+}
+
+
+
+
+.content .sel{
+	background: #f5f5f5;
+}
+.content .page_two select,.content .page_three select{
+	/*border: 1px solid #ccc !important;*/
+	margin-bottom: 0;
+	border: none;
+	padding: .5rem;
+	background: transparent;
+	background: url(../images/xiala.png) no-repeat;
+	background-size: 6% 45%;
+	background-position: 97% center;
+	padding-left: .5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 375px){
+	.content .page_two select,.content .page_three select{
+		/*border: 1px solid #ccc !important;*/
+		margin-bottom: 0;
+		border: none;
+		padding: .5rem;
+		background: transparent;
+		background: url(../images/xiala.png) no-repeat;
+		background-size: 5% 45%;
+		background-position: 97% center;
+		padding-left: .5rem;
+	}
+}
+@media screen and (min-width: 376px) and (max-width: 430px){
+	.content ..page_two select,.content ..page_three select{
+		/*border: 1px solid #ccc !important;*/
+		margin-bottom: 0;
+		border: none;
+		padding: .5rem;
+		background: transparent;
+		background: url(../images/xiala.png) no-repeat;
+		background-size: 5% 45%;
+		background-position: 97% center;
+		padding-left: .5rem;
+	}
+}
+
+
+
+
+.page_two .p2btn,.page_three .p2btn{
+	margin-top: 1.5rem;
+}
+.page_two .p2btn .zdy-btn,.page_three .p2btn .zdy-btn{
+	width: 100%;
+}
+.page_two .p2_xuan,.page_three .p2_xuan{
+
+}
+.page_two .p2_xuan .yixuan,.page_three .p2_xuan .yixuan{
+	margin-top: 1rem;
+}
+.page_two .p2_search,.page_three .p2_search{
+	margin-top:1rem;
+	position: relative;
+}
+.page_two .p2_search p,.page_three .p2_search p{
+	margin-bottom: .5rem;
+}
+ .page_two .p2_search span,.page_three .p2_search span{
+	position: absolute;
+	bottom: 2rem;
+	right: .5rem; 
+	color: #ccc;
+}
+.page_two .p2_search input,.page_three .p2_search input{
+	border: none;
+	background: #f5f5f5;
+	padding-right: 2rem;
+} 
+
+
+.page_two .p2_search .search_cont,.page_three .p2_search .search_cont{
+	border: 1px solid #ccc;
+	position: absolute;
+	margin-top: -1rem;
+	width: 100%;
+	background: #fff;
+	z-index: 1;
+	display: none;
+}
+.page_two .p2_search .search_cont li,.page_three .p2_search .search_cont li{
+	border-bottom: 1px solid #ccc;
+	height: 3rem;
+	line-height: 3rem;
+	padding-left: .5rem;
+	font-size: 1.6rem;
+}
+.page_two .p2_search .search_cont li:active,.page_three .p2_search .search_cont li:active{
+	background: #ccc;
+}
+.page_two .p2_search .search_cont li:last-child,.page_three .p2_search .search_cont li:last-child{
+	border-bottom: none;
+}
+
+
+
+
+.page_two .items,.page_three .items{
+	margin-top: 1rem;
+	/*border: 1px solid #ccc;*/
+	/* box-sizing: border-box;
+	display: flex;
+	justify-content: space-between; */
+}
+.page_two .items .item,.page_three .items .item{
+	border: 1px solid #ccc;
+	width: 30%;
+	text-align: center;
+	position: relative;
+	padding: .5rem;
+	margin-right: 3%;
+	margin-bottom: 1.5rem;
+}
+.page_two .items .item span,.page_three .items .item span{
+	width: 1.5rem;
+	height: 1.5rem;
+	display: inline-block;
+	position: absolute;
+	top: -.7rem;
+	right: -.7rem;
+}
+.page_two .items .item span img,.page_three .items .item span img{
+	width: 100%;
+	height: 100%;
+}
+/*第二页结束*/
+
+/*搜索*/
+.select2-container{
+	/* width: 80% !important;
+	margin: 0 auto; */
+}
+.select2-container--default .select2-selection--multiple{
+	/*height: 4rem;*/
+	overflow: auto;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1.6rem;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+	font-size: 1.8rem;
+}
+.select2-results__option{
+	font-size: 1.8rem;
+}
+.select2-container--default .select2-search--inline .select2-search__field{
+	text-align: left;
+}
+

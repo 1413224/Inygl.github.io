@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页详情</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+	<link rel="stylesheet" type="text/css" href="css/xqindex.css">
+	<link rel="stylesheet" type="text/css" href="icon_fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/ziti.css">
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/rangeslider.min.js"></script>
+</head>
+<body>
+	<div id="i-xiangqing">
+		<header class="mui-bar mui-bar-nav zd-bar">
+			<a href="index.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!-- <h1 class="mui-title">我的收藏</h1> -->
+		</header>
+
+		<div class="content">
+			<h1>区政协召开“创建幸福家庭,打造优生之城”双月协商座谈会</h1>
+			<p class="date">发布日期：2017-04-21</p>
+			<div class="img">
+				<a href=""><img src="images/xiangqing.jpg" alt=""></a>
+			</div>
+			<p class="intro">
+				4月21日上午，广陵区政协召开首次双月协商座谈会，围绕“创建幸福家庭，打造优生之城”建言献策。区政协主席刘春晓主持会议并讲话，区政协副主席居益芬、丁卫社、胡明寿、阚永明，秘书长梁剑芳及区政协机关各委、室负责人出席座谈会，区政府副区长孟亚东及区政府有关部门负责人应邀参加。
+			</p>
+		</div>
+
+		<div class="footer">
+			<ul>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-Aa" id="font"></span></a>
+				</li>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-shoucang5" id="shoucang"></span></a>
+				</li>
+				<li><a href="javascript:;">
+					<span class="iconfont icon-daochu" id="zhezhao"></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 控制字体 -->
+	<div class="step">
+		<section class="setup">
+			<div class="ziti">
+				<span class="sp_size xiao">小</span>
+				<span class="sp_size biaozhun">标准</span>
+				<span class="sp_size da">大</span>
+			</div>
+			<div>
+    		   	<input type="range" min="10" max="12" step="1" value="11" data-rangeslider>
+    		   	<output class="output" style="opacity: 0;"></output>
+    		</div>
+		</section>
+	</div>
+	
+	<div class="zhezhao" style="display: none;"></div>
+
+
+
+
+
+
+	<script type="text/javascript">
+	/*mui('body').on('tap','a',function(){
+    	window.top.location.href=this.href;
+	});*/
+
+	$(function(){
+
+			$("#shoucang").click(function(){
+				$(this).toggleClass("icon-shoucangfill")
+			});
+
+
+			var html = document.getElementsByTagName('html')[0];
+			$("#font").click(function(){
+				$(".step").toggle();
+				return false;
+				
+			});
+
+			$(".step").click(function(){
+				$(this).show();
+				return false;
+			});
+
+			$("#zhezhao").click(function(){
+				$(".zhezhao").show();
+				return false;
+			});
+
+			$('html,body').click(function(){
+				$(".zhezhao").hide();
+				$(".step").hide();
+			});
+
+			var $document   = $(document);
+        	var selector    = '[data-rangeslider]';
+        	var $inputRange = $(selector);
+
+        	function valueOutput(element) {
+            	var value = element.value;
+            	var output = element.parentNode.getElementsByTagName('output')[0];
+
+            	output.innerHTML = value;
+            	$("html,body").css({
+            		"font-size":value+"px"
+            	});
+
+            	/*if(value==10){
+            		
+            	}*/
+
+        	}
+
+        	for (var i = $inputRange.length - 1; i >= 0; i--) {
+            	valueOutput($inputRange[i]);
+        	};
+
+        	// Update value output
+        	$document.on('input', selector, function(e) {
+        	    valueOutput(e.target);
+        	});
+
+        	// Initialize the elements
+        	$inputRange.rangeslider({
+        	    polyfill: false
+        	});
+
+		});
+
+
+
+	</script>
+</body>
+</html>
