@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<style type="text/css">
+	html{font-size: 20px;}
+	.bofang{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #4da6ff;
+		border-radius: 50%;
+	}
+	.triangle-right{
+		width: 0;
+    	height: 0;
+    	border-width: 8px;
+    	border-style:solid;
+    	border-color:transparent transparent transparent #fff;
+    	margin-left: 10px;
+    	text-indent: -999px;
+	}
+	.pause{
+		width: 16px;
+		height: 16px;
+		position: relative;
+		top: -.2rem;
+		/*text-indent: -999px;*/
+	}
+	.pause img{
+		width: 100%;
+		height: 100%;
+	}
+	.sourcewrap{
+		border: 1px solid #333;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.sourcewrap .progress{
+		width: 70%;
+		height: 5px;
+		background: #e4e4e4;
+		margin-top: 10px;
+		margin-left: 10px;
+		border-radius: 0 2px 2px 0;
+		position: relative;
+	}
+	.progress .progresssub{
+		width: 0;
+		height: 5px;
+		background: #4aa9f6;
+		border-radius: 0 2px 2px 0;
+	}
+	.progress .controls{
+		width: 15px;
+		height: 15px;
+		background: #ccc;
+		border-radius: 50%;
+		position: absolute;
+		top: -5px;
+		left: -5px;
+	}
+	.duration{
+		color:#333;
+		margin-left: 10px;
+		font-size: 14px;
+		margin-top: 5px;
+	}
+	</style>
+</head>
+<body>
+	<audio controls="controls" id="source">
+	  <!-- <source src="song.ogg" type="audio/ogg"> -->
+	  <source src="7339.wav" type="audio/mpeg" id="source">
+	</audio>
+
+	<div class="sourcewrap clearfix" id="sourcewrap">
+		<div class="bofang fl">
+			<p class="triangle-right">播放</p>
+			<p class="pause" style="display: none;"><img src="images/pause.png"></p>
+		</div>
+		<div class="progress fl" id="progress">
+			<div class="progresssub" id="bar"></div>
+			<div class="controls" id="controls"></div>
+		</div>
+		<div class="duration fl" id="duration">00:10</div>
+	</div>
+
+<script type="text/javascript">
+	$(function(){
+		var sourcewrap=document.getElementById("sourcewrap");
+		var source=document.getElementById("source");
+		var bar=document.getElementById("bar");
+		var progress=document.getElementById("progress");
+		var controls=document.getElementById("controls");
+
+		// console.log(source);
+		// source.play();
+
+		$(".bofang").click(function(){
+			console.log($(".triangle-right").text());
+			if($(".triangle-right").text()=="播放"){
+				$(".triangle-right").hide();
+				$(".pause").show();
+				$(".triangle-right").text("暂停");
+				//开始播放
+				source.play();
+
+				
+			}else{
+				$(".triangle-right").show();
+				$(".pause").hide();
+				$(".triangle-right").text("播放")
+				//停止播放
+				source.pause();
+			}
+			//当播放停止时还原开始状态
+			source.addEventListener('ended',function(){
+				$(".triangle-right").show();
+				$(".pause").hide();
+				$(".triangle-right").text("播放")
+				//停止播放
+				source.pause();
+			});
+
+			//进度条
+			source.addEventListener('timeupdate',function(){
+				var scale=source.currentTime/source.duration;
+				bar.style.width=progress.offsetWidth*scale+"px";
+				controls.style.left=(progress.offsetWidth-15)*scale+"px";
+				//剩余的时间
+				var stime=Math.floor(source.duration-source.currentTime);
+				var mine=Math.floor(stime/60);
+				var sect=Math.floor(stime%60);
+				// console.log(sect)
+				mine=mine>=10?mine:'0'+mine;
+				sect=sect>=10?sect:'0'+sect;
+				var dtime=mine+":"+sect;
+				$("#duration").text('-'+dtime);
+			});
+
+
+		});
+
+		setTimeout(function(){
+			var duration=Math.floor(source.duration);
+			var min=Math.floor(duration/60);
+			var sec=Math.floor(duration%60);
+
+			min=min>=10?min:'0'+min;
+			sec=sec>=10?sec:'0'+sec;
+
+			var minsec=min+':'+sec;
+			$("#duration").text('-'+minsec);
+		},100);
+
+		//点击进度条
+		progress.addEventListener('touchstart',function(e){
+			var leftm=e.touches[0].clientX-progress.offsetLeft-sourcewrap.offsetLeft;
+			console.log(leftm);
+			if(leftm<=0){
+				leftm=0;
+			}
+			if(leftm>=progress.offsetWidth){
+				leftm=progress.offsetWidth;
+			}
+			controls.style.left=leftm+"px";
+			bar.style.width=leftm+"px";
+
+			//时间关联
+			var scales=leftm/progress.offsetWidth;
+			source.currentTime =source.duration*scales;
+
+
+			source.addEventListener('timeupdate',function(){
+				//剩余的时间
+				var stime=Math.floor(source.duration-source.currentTime);
+				var mine=Math.floor(stime/60);
+				var sect=Math.floor(stime%60);
+				// console.log(sect)
+				mine=mine>=10?mine:'0'+mine;
+				sect=sect>=10?sect:'0'+sect;
+				var dtime=mine+":"+sect;
+				$("#duration").text('-'+dtime);
+			});
+			// source.play();
+
+			bar.style.width=progress.offsetWidth*scales+"px";
+
+			/*$(".triangle-right").hide();
+			$(".pause").show();
+			$(".triangle-right").text("暂停");*/
+
+		});
+
+		//拖拽
+			controls.addEventListener('touchstart',function(e){
+				// console.log(e.touches[0].clientX)
+				console.log(e);
+				source.pause();
+			});
+			controls.addEventListener('touchmove',function(e){
+				var leftv=e.touches[0].clientX-progress.offsetLeft-sourcewrap.offsetLeft;
+				if(leftv<=0){
+					leftv=0;
+				}
+				if(leftv>=progress.offsetWidth){
+					leftv=progress.offsetWidth;
+				}
+				controls.style.left=leftv+"px";
+			});
+			controls.addEventListener('touchend',function(){
+				var scales=controls.offsetLeft/progress.offsetWidth;
+				source.currentTime =source.duration*scales;
+				source.play();
+			});
+
+	});
+</script>
+</body>
+</html>

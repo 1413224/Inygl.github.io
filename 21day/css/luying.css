@@ -1,0 +1,102 @@
+p {
+  margin-bottom: 0;
+}
+.border {
+  border: 1px solid #333;
+}
+body {
+  background: #d1e8f8;
+}
+.wrap {
+  padding-bottom: 160px;
+}
+.content {
+  width: 90%;
+  background: #279dff;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  font-size: .7rem;
+}
+.content h1 {
+  font-size: .8rem;
+  /*.border;*/
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+.content h1 i {
+  padding-right: .5rem;
+}
+.content .cont {
+  font-size: .8rem;
+  text-align: center;
+}
+.audio {
+  /*border: 1px solid #333;*/
+  width: 90%;
+  margin: 1rem auto 0;
+}
+.audio .audiosub {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px 3px;
+  background: #fafafa;
+  margin-bottom: 5px;
+}
+.audio .audiosub audio {
+  width: 100%;
+  margin-top: 2px;
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  /*border: 1px solid #333;*/
+}
+.footer .yuan {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  margin: -34px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .yuan .yuansub {
+  width: 64px;
+  height: 64px;
+  background: #45a2ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .yuan .yuansub .ico {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer .pauselu {
+  text-align: center;
+}
+.footer .next {
+  position: absolute;
+  top: 32px;
+  right: .5rem;
+}
+.footer .next p {
+  font-size: 16px;
+}
+.footer .next p i {
+  font-size: 16px;
+  color: #5ba2e3;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=luying.css.map */

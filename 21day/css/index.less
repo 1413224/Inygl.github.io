@@ -1,0 +1,361 @@
+@rem:20rem;
+p{margin-bottom:0;}
+.border{border:1px solid #333;}
+
+
+.head{
+	width: 100%;
+	height: 158/@rem;
+	background: url(../images/tit.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	.title{
+		/*border: 1px solid #fff;*/
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding-bottom: .5rem;
+		/*height: 5rem;*/
+		.left{
+			color: #fff;
+			padding-left: 1rem;
+			padding-right: .3rem;
+			padding-top: .5rem;
+			span{
+				font-size: 2rem;
+				font-weight: bold;
+			}
+		}
+		.right{
+			padding-left: .3rem;
+			border-left: 1px solid #fff;
+			p{
+				color: #fff;
+			}
+			.read{
+				font-size: .8rem;
+			}
+		}
+	}
+}
+.contentwrap{
+	width: 100%;
+	background: #fff;
+	padding: .5rem;
+	border-bottom: 1px solid #e4e4e4;
+	.content{
+		.num{
+			color: #a6d2ed;
+			font-size: 14px;
+			i{
+				padding-right: .3rem;
+			}
+		}
+		.time{
+			border-bottom: 1px solid #e4e4e4;
+			padding-bottom: 10px;
+			p{
+				color: #333;
+				font-size: 14px;
+				.icon-xie{
+					color: #a6d2ed;
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+		}
+		.num{
+			padding-top: 10px;
+		}
+		.join-avatars{
+			border-bottom: 1px solid #e4e4e4;
+			padding:5px 0 10px;
+			.item{
+				width: 30/@rem;
+				height: 30/@rem;
+				margin-right: .3rem;
+				img{
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+		}
+		.intro-text{
+			font-size: 14px;
+			color: #666;
+			padding-top: 20px;
+			line-height: 18px;
+			max-height:5.5rem;
+			overflow: hidden;
+		}
+		.intro-text-more{
+			text-align: right;
+			color: #a6c8e2;
+			font-size: 14px;
+			padding: .2rem 0
+		}
+		.join{
+			text-align: center;
+			margin-top: 20px;
+			button{
+				width: 80%;
+				height: 40px;
+				background: #52b1ff;
+				border: none;
+				border-radius: 20px;
+			}
+		}
+	}
+}
+.schedule{
+	background: #fff;
+	padding: .5rem;
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 10px;
+	.title{
+		background: url(../images/21.png) no-repeat left center;
+		height: 44/@rem;
+		line-height: 44/@rem;
+		background-size: .8rem;
+		padding-left: 1.2rem;
+		font-size: 14px;
+		border-bottom: 1px solid #e4e4e4;
+	}
+	.schedule-tips{
+		font-size: 12px;
+		color: #999;
+		padding: .5rem;
+	}
+	.days{
+		.ring{
+			width: 36/@rem;
+			height: 36/@rem;
+			line-height: 36/@rem;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			text-align: center;
+			margin: 0 .3rem;
+			.day{
+				width: 28/@rem;
+				height: 28/@rem;
+				line-height: 28/@rem;
+				background: #f2f4f5;
+				color: #FFF;
+				border-radius: 50%;
+				font-size: 14px;
+			}
+			.cur{
+			background: orange !important;
+			}
+		}
+	}
+}
+
+/*报名信息开始*/
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+}
+.apply-modal{
+	/* width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5); */
+	.apply-modal-box{
+		z-index: 10;
+		position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    -webkit-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+	    width: 84%;
+	    background: #fff;
+	    border-radius: .2rem;
+	    overflow: hidden;
+	    /*height: 3rem;*/
+	    .apply-modal-title{
+	    	height: 65/@rem;
+	    	line-height: 65/@rem;
+	    	font-size: 1rem;
+	    	color: #fff;
+	    	text-align: center;
+	    	background:rgba(39,158,255,.8) url(../images/bm.png) no-repeat 100% 100%;
+	    	background-size: 100% 100%;
+	    }
+	    .apply-modal-content{
+	    	padding: 1rem;
+	    	.sub-title{
+	    		font-size: .7rem;
+	    		color: #666;
+	    		margin: .25rem 0;
+	    	}
+	    	.radio-box{
+	    		border: 1px solid #e4e4e4;
+	    		border-radius:.3rem;
+	    		font-size:.6rem;
+	    		.radio-wrap{
+	    			/*height: 3rem;*/
+	    			.label{
+	    				/*border: 1px solid #333;*/
+	    				padding-left: 2rem;
+	    				.tit{
+	    					color: #333;
+	    					font-size: .7rem;
+	    				}
+	    				p{
+	    					font-size: .6rem;
+	    					white-space: nowrap;
+	    					margin-top: .3rem;
+	    				}
+	    			}
+	    			
+	    			.dadu{
+	    				top: 18/@rem;
+	    				left: .3rem;
+	    			}
+	    		}
+	    	}
+	    	.input-wrap{
+	    		border: 1px solid #e4e4e4;
+	    		padding: .25rem;
+	    		border-radius: .3rem;
+	    		input{
+	    			width: 100%;
+    				-webkit-appearance: none;
+    				border:0;
+    				color: #666;
+    				font-size: .7rem;
+    				padding-left: .5rem;
+	    		}
+	    	}
+	    	.tijiao{
+	    		width: 100%;
+	    		margin-top: 1rem;
+	    		button{
+	    			width: 100%;
+	    			background:rgba(39,158,255,.8);
+	    			border: none;
+	    			height: 2rem;
+	    			font-size: .8rem;
+	    			border-radius: 1rem;
+	    		}
+	    	}
+	    }
+	}
+}
+/*报名信息结束*/
+
+/*报名成功开始*/
+.success-modal-box{
+	z-index: 10;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 84%;
+    background: #fff;
+    border-radius: .2rem;
+    overflow: hidden;
+    .title-wrap{
+    	padding: .5rem 0;
+    	/*height: 6rem;*/
+    	line-height: 6rem;
+    	/* line-height: 65/@rem;
+    	font-size: 1rem; */
+    	color: #fff;
+    	text-align: center;
+    	background:rgba(39,158,255,.8) url(../images/cjbg.png) no-repeat 100% 100%;
+    	background-size: 100% 100%;
+    	.title-bg{
+    		background: url(../images/titbg.png) no-repeat;
+    		background-size: 100% 100%;
+    		height: 6rem;
+    		.title-text{
+
+    		}
+    	}
+    }
+    .content-wrap{
+    	padding: .5rem;
+    	text-align: center;
+    	.tijiao{
+    		width: 100%;
+    		margin-top: 1rem;
+    		button{
+    			width: 100%;
+    			background:rgba(39,158,255,.8);
+    			border: none;
+    			height: 2rem;
+    			font-size: .8rem;
+    			border-radius: 1rem;
+    		}
+    	}
+    }
+}
+/*报名成功结束*/
+
+/*扫描打卡提醒开始*/
+.subscribe-modal-box{
+	z-index: 10;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 84%;
+    background: #fff;
+    border-radius: .2rem;
+    overflow: hidden;
+    .title-img{
+    	height: 6rem;
+    	position: relative;
+    	img{
+    		width: 100%;
+    		height: 100%;
+    	}
+    	.subscribe-close-btn{
+			position: absolute;
+			top: .5rem;
+			right: .5rem;
+			width: 1rem;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+    	}
+    }
+    .middle-wrap{
+    	padding: 22/@rem 47/@rem 20/@rem;
+    	p{
+    		color: #333;
+    		font-size: 1rem;
+    		margin-bottom: 1rem;
+    		text-align: left;
+    		span{
+    			font-weight: 700;
+    		}
+    	}
+    	img{
+    		width: 100%;
+
+    	}
+    }
+    a.di{
+    		display: block;
+			font-size: .6rem;
+			color: #999;
+			text-align: center;
+			height: 46/@rem;
+			line-height: 46/@rem;
+			background: #f1f1f1;
+    	}
+}
+/*扫描打卡提醒结束*/

@@ -1,0 +1,351 @@
+p {
+  margin-bottom: 0;
+}
+.border {
+  border: 1px solid #333;
+}
+.head {
+  width: 100%;
+  height: 7.9rem;
+  background: url(../images/tit.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.head .title {
+  /*border: 1px solid #fff;*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: .5rem;
+  /*height: 5rem;*/
+}
+.head .title .left {
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: .3rem;
+  padding-top: .5rem;
+}
+.head .title .left span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.head .title .right {
+  padding-left: .3rem;
+  border-left: 1px solid #fff;
+}
+.head .title .right p {
+  color: #fff;
+}
+.head .title .right .read {
+  font-size: .8rem;
+}
+.contentwrap {
+  width: 100%;
+  background: #fff;
+  padding: .5rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.contentwrap .content .num {
+  color: #a6d2ed;
+  font-size: 14px;
+}
+.contentwrap .content .num i {
+  padding-right: .3rem;
+}
+.contentwrap .content .time {
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 10px;
+}
+.contentwrap .content .time p {
+  color: #333;
+  font-size: 14px;
+}
+.contentwrap .content .time p .icon-xie {
+  color: #a6d2ed;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contentwrap .content .num {
+  padding-top: 10px;
+}
+.contentwrap .content .join-avatars {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 5px 0 10px;
+}
+.contentwrap .content .join-avatars .item {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .3rem;
+}
+.contentwrap .content .join-avatars .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.contentwrap .content .intro-text {
+  font-size: 14px;
+  color: #666;
+  padding-top: 20px;
+  line-height: 18px;
+  max-height: 5.5rem;
+  overflow: hidden;
+}
+.contentwrap .content .intro-text-more {
+  text-align: right;
+  color: #a6c8e2;
+  font-size: 14px;
+  padding: 0.2rem 0;
+}
+.contentwrap .content .join {
+  text-align: center;
+  margin-top: 20px;
+}
+.contentwrap .content .join button {
+  width: 80%;
+  height: 40px;
+  background: #52b1ff;
+  border: none;
+  border-radius: 20px;
+}
+.schedule {
+  background: #fff;
+  padding: .5rem;
+  border-bottom: 1px solid #e4e4e4;
+  margin-top: 10px;
+}
+.schedule .title {
+  background: url(../images/21.png) no-repeat left center;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background-size: .8rem;
+  padding-left: 1.2rem;
+  font-size: 14px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.schedule .schedule-tips {
+  font-size: 12px;
+  color: #999;
+  padding: .5rem;
+}
+.schedule .days .ring {
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 .3rem;
+}
+.schedule .days .ring .day {
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  background: #f2f4f5;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 14px;
+}
+.schedule .days .ring .cur {
+  background: orange !important;
+}
+/*报名信息开始*/
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.apply-modal {
+  /* width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5); */
+}
+.apply-modal .apply-modal-box {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 84%;
+  background: #fff;
+  border-radius: .2rem;
+  overflow: hidden;
+  /*height: 3rem;*/
+}
+.apply-modal .apply-modal-box .apply-modal-title {
+  height: 3.25rem;
+  line-height: 3.25rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(39, 158, 255, 0.8) url(../images/bm.png) no-repeat 100% 100%;
+  background-size: 100% 100%;
+}
+.apply-modal .apply-modal-box .apply-modal-content {
+  padding: 1rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .sub-title {
+  font-size: .7rem;
+  color: #666;
+  margin: .25rem 0;
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box {
+  border: 1px solid #e4e4e4;
+  border-radius: .3rem;
+  font-size: .6rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box .radio-wrap {
+  /*height: 3rem;*/
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box .radio-wrap .label {
+  /*border: 1px solid #333;*/
+  padding-left: 2rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box .radio-wrap .label .tit {
+  color: #333;
+  font-size: .7rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box .radio-wrap .label p {
+  font-size: .6rem;
+  white-space: nowrap;
+  margin-top: .3rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .radio-box .radio-wrap .dadu {
+  top: 0.9rem;
+  left: .3rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .input-wrap {
+  border: 1px solid #e4e4e4;
+  padding: .25rem;
+  border-radius: .3rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .input-wrap input {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 0;
+  color: #666;
+  font-size: .7rem;
+  padding-left: .5rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .tijiao {
+  width: 100%;
+  margin-top: 1rem;
+}
+.apply-modal .apply-modal-box .apply-modal-content .tijiao button {
+  width: 100%;
+  background: rgba(39, 158, 255, 0.8);
+  border: none;
+  height: 2rem;
+  font-size: .8rem;
+  border-radius: 1rem;
+}
+/*报名信息结束*/
+/*报名成功开始*/
+.success-modal-box {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 84%;
+  background: #fff;
+  border-radius: .2rem;
+  overflow: hidden;
+}
+.success-modal-box .title-wrap {
+  padding: .5rem 0;
+  /*height: 6rem;*/
+  line-height: 6rem;
+  /* line-height: 65/@rem;
+    	font-size: 1rem; */
+  color: #fff;
+  text-align: center;
+  background: rgba(39, 158, 255, 0.8) url(../images/cjbg.png) no-repeat 100% 100%;
+  background-size: 100% 100%;
+}
+.success-modal-box .title-wrap .title-bg {
+  background: url(../images/titbg.png) no-repeat;
+  background-size: 100% 100%;
+  height: 6rem;
+}
+.success-modal-box .content-wrap {
+  padding: .5rem;
+  text-align: center;
+}
+.success-modal-box .content-wrap .tijiao {
+  width: 100%;
+  margin-top: 1rem;
+}
+.success-modal-box .content-wrap .tijiao button {
+  width: 100%;
+  background: rgba(39, 158, 255, 0.8);
+  border: none;
+  height: 2rem;
+  font-size: .8rem;
+  border-radius: 1rem;
+}
+/*报名成功结束*/
+/*扫描打卡提醒开始*/
+.subscribe-modal-box {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 84%;
+  background: #fff;
+  border-radius: .2rem;
+  overflow: hidden;
+}
+.subscribe-modal-box .title-img {
+  height: 6rem;
+  position: relative;
+}
+.subscribe-modal-box .title-img img {
+  width: 100%;
+  height: 100%;
+}
+.subscribe-modal-box .title-img .subscribe-close-btn {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 1rem;
+}
+.subscribe-modal-box .title-img .subscribe-close-btn img {
+  width: 100%;
+  height: 100%;
+}
+.subscribe-modal-box .middle-wrap {
+  padding: 1.1rem 2.35rem 1rem;
+}
+.subscribe-modal-box .middle-wrap p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.subscribe-modal-box .middle-wrap p span {
+  font-weight: 700;
+}
+.subscribe-modal-box .middle-wrap img {
+  width: 100%;
+}
+.subscribe-modal-box a.di {
+  display: block;
+  font-size: .6rem;
+  color: #999;
+  text-align: center;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  background: #f1f1f1;
+}
+/*扫描打卡提醒结束*/
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,43 @@
+body{
+	background: #fff;
+}
+.tit{
+	padding: 1rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.data{
+	padding-left: 1rem;
+}
+.data p{
+	font-size: 1rem;
+}
+.data p span{
+	color: #a6d2ed;
+}
+.content{
+	padding-top: 1rem;
+}
+.content p{
+	color: rgb(255, 192, 0);
+	font-size: 1rem;
+	text-align: center;
+}
+.content .dianji{
+	color: #333;
+	padding-top: 1rem;
+}
+.content strong{
+	color: rgb(0, 82, 255);
+}
+.content .tip{
+	color: rgb(86, 86, 86);
+	font-weight: 700;
+	margin-top: 2rem;
+}
+.tousu{
+	text-align: right;
+	font-size: 1rem;
+	padding-right: 1rem;
+	margin-top: 2rem;
+}
